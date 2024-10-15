@@ -92,13 +92,13 @@ st.markdown("""
 st.markdown('<p class="big-font">LEGAL DRAFT PRO</p>', unsafe_allow_html=True)
 st.markdown('<p class="medium-font">Streamline Your Legal Document Creation</p>', unsafe_allow_html=True)
 
-doc1_path = r"files\my_own.docx"
-doc2_path = r"files\my_own2.docx"
-doc3_path = r"files\Data_license_Agreement.docx"
-doc4_path = r"files\professional_service_agreement.docx"
-doc5_path = r"files\asset_purchase_agreement.docx"
-doc6_path = r"files\SAFE2.docx"
-doc7_path = r"files\Stock_Purchase_Agreement_Startups.docx"
+doc1_path = r"files/my_own.docx"
+doc2_path = r"files/my_own2.docx"
+doc3_path = r"files/Data_license_Agreement.docx"
+doc4_path = r"files/professional_service_agreement.docx"
+doc5_path = r"files/asset_purchase_agreement.docx"
+doc6_path = r"files/SAFE2.docx"
+doc7_path = r"files/Stock_Purchase_Agreement_Startups.docx"
  
 doc1 = Document(doc1_path)
 doc2 = Document(doc2_path)
