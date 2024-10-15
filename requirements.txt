@@ -3,20 +3,3 @@ python-docx
 langchain
 langchain_community
 langchain_google_genai
-
-
-
-
-# Gemini_key="AIzaSyANXuJrBgTaReoX5yU040oSOSMzFAZNEGI"
-# HUGGINGFACEHUB_API_TOKEN="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"
-
-
-
-# SERVER="PROMPTORA14\SQLEXPRESS"
-# DATABASE="omega"
-# DRIVER="ODBC Driver 17 for SQL Server"
-# OPENAI_API_KEY="sk-proj-XCKdVHKR3yRwvjd6nzWmT3BlbkFJjzRjVrqAvBfXZfZVf0My"
-
-# Azure_key="42e142c0df4e42b297be206230a66d7b"
-
-# PINECONE_API_KEY="19536a2d-484d-4219-b57b-aec3c38822cd"
