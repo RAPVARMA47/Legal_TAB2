@@ -89,6 +89,16 @@ st.markdown("""
     }
     </style>
     """, unsafe_allow_html=True)
+
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
+ 
 st.markdown('<p class="big-font">LEGAL DRAFT PRO</p>', unsafe_allow_html=True)
 st.markdown('<p class="medium-font">Streamline Your Legal Document Creation</p>', unsafe_allow_html=True)
 
