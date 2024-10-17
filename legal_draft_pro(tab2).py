@@ -95,7 +95,7 @@ st.markdown("""
         background-color: grey;
     }
     
-    .stButton>button:link{
+    .stButton>button:focus{
         color: grey;
         border: 0.5px solid grey;
         background-color: grey;
@@ -105,11 +105,6 @@ st.markdown("""
         color: grey;
         border: 0.5px solid grey;
         background-color: grey;
-    }
-
-    .stButton>button:active::after{
-        color: black;
-        border: 0.5px solid black ;
     }
     
     .stButton > button {
