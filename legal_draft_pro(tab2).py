@@ -261,6 +261,8 @@ user_input = st.text_area("Enter your query to fill the details:",
 
 # Process input
 if user_input and st.button("Process Input"):
+    global iii
+    iii=0
     st.session_state.state['user_input'] = user_input
     with st.spinner("Processing your input..."):
         processed_response = process_input(user_input, placeholders1, placeholders2, placeholders3, placeholders4, placeholders5, placeholders6, placeholders7)
@@ -289,11 +291,12 @@ if st.session_state.state['processed']:
         for placeholder in st.session_state.state['placeholders']:
             for key, value in placeholder.items():
                 if value == "MISSING":
-                    user_detail = st.text_input(f"{key.replace('_', ' ')}:", key=key,
+                    user_detail = st.text_input(f"{key.replace('_', ' ')}:", key=iii,
                                                 value=st.session_state.state['collected_details'].get(key, ""))
                     st.session_state.state['collected_details'][key] = user_detail
                 else:
-                    st.text_input(f"{key}:", value=value, disabled=True)
+                    st.text_input(f"{key}:",key=iii, value=value, disabled=True)
+                iii+1
 
     with col2:
         st.markdown('<p class="subheader">Definitions</p>', unsafe_allow_html=True)
