@@ -77,11 +77,17 @@ st.markdown("""
     [class="big-font"]{
         margin-top : -110px;
     }
+    
     .st-emotion-cache-1jicfl2 {
     width: 100%;
     min-width: auto;
     max-width: initial;
     }
+    
+    .stButton:hover{
+        color: grey;
+    }
+    
     .stButton > button {
     background-color: white;
     color: black;
@@ -92,6 +98,7 @@ st.markdown("""
     transition: all 0.3s ease;
     border: 1px solid black;
     }
+    
    [class="stMainBlockContainer block-container st-emotion-cache-1jicfl2 ea3mdgi5"]{
        margin-top : -90px;
    }
