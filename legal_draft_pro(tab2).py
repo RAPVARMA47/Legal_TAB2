@@ -87,7 +87,9 @@ st.markdown("""
         font-weight: bold;
         margin-bottom: 10px;
     }
-    
+    [class="big-font"]{
+        margin-top : -110px;
+    }
     </style>
     """, unsafe_allow_html=True)
 
