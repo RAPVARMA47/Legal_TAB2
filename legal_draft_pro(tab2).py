@@ -95,10 +95,16 @@ st.markdown("""
         background-color: grey;
     }
     
+    
     .stButton>button:active{
         color: grey;
         border: 0.5px solid grey;
         background-color: grey;
+    }
+
+    .stButton>button:active::after{
+        color: black;
+        border: 0.5px solid black ;
     }
     
     .stButton > button {
