@@ -86,6 +86,7 @@ st.markdown("""
     
     .stButton>button:hover{
         color: grey;
+        border: 0.5px solid grey;
     }
     
     .stButton > button {
