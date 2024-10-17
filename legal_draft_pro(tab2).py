@@ -88,16 +88,21 @@ st.markdown("""
         color: grey;
         border: 0.5px solid grey;
     }
-
-    .stButton>button:focus:hover{
-        color: grey;
-        border: 0.5px solid grey;
-    }
     
-    .stButton>button:focus{
-        color: grey;
-        border: 0.5px solid grey;
+    .stButton>button:focus {
+    outline: -webkit-focus-ring-color auto 5px !important;
+    color: black !important;
     }
+
+    # .stButton>button:hover{
+    #     color: grey;
+    #     border: 0.5px solid grey;
+    # }
+    
+    # .stButton>button:focus{
+    #     color: grey;
+    #     border: 0.5px solid grey;
+    # }
     
     .stButton>button:active{
         color: grey;
