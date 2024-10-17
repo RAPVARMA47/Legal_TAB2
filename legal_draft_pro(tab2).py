@@ -288,7 +288,7 @@ if "query_input" not in st.session_state:
  
 
 
-query = st.text_area("Enter your query to fill the details:", value=st.session_state.state['user_input'])
+query = st.text_area("Enter your query to fill the details:", value=st.session_state.query_input)
 
 col1, col2, col3 = st.columns(3)
 with col1:
