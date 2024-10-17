@@ -95,6 +95,11 @@ st.markdown("""
         background-color: grey;
     }
     
+    .stButton>button:link{
+        color: grey;
+        border: 0.5px solid grey;
+        background-color: grey;
+    }
     
     .stButton>button:active{
         color: grey;
