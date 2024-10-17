@@ -59,16 +59,7 @@ st.markdown("""
         border: 1px solid #008080;
         padding: 10px;
     }
-    .stButton > button {
-        background-color: #6a0dad;
-        color: white;
-        font-weight: bold;
-        border-radius: 25px;
-        padding: 10px 25px;
-        font-size: 16px;
-        border: none;
-        transition: all 0.3s ease;
-    }
+
  
     .step-header {
         background-color: #008080;
