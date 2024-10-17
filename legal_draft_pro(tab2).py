@@ -321,7 +321,7 @@ if "query_input" not in st.session_state:
 
 query = st.text_area("Enter your query to fill the details:", value=st.session_state.query_input)
 
-st.write("Sample Queries")
+st.write("Sample Prompts:")
 
 col1, col2 = st.columns(2)
 with col1:
