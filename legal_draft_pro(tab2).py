@@ -329,7 +329,7 @@ with col1:
 #     if st.button("Please fill in the details for a Professional Service Agreement: Effective June 1, 2024, ConsultTech Solutions, based in Austin, Texas, will provide professional services to DataDrive Corporation, headquartered in Seattle, Washington, for a period of 12 months."):
 #         set_query("Please fill in the details for a Professional Service Agreement: Effective June 1, 2024, ConsultTech Solutions, based in Austin, Texas, will provide professional services to DataDrive Corporation, headquartered in Seattle, Washington, for a period of 12 months.")
 
-col2 = st.columns(2)
+col2 = st.columns(1)
 with col2:
     if st.button("Please fill in the details for this New York agreement: On March 18, 2024, the company Promptora Inc. will engage the consultant Sarah Johnson."):
         set_query("Please fill in the details for this New York agreement: On March 18, 2024, the company Promptora Inc. will engage the consultant Sarah Johnson.")
