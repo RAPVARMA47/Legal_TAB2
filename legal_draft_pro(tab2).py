@@ -69,10 +69,7 @@ st.markdown("""
         border: none;
         transition: all 0.3s ease;
     }
-    .stButton > button:hover {
-        background-color: #4b0082;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
+ 
     .step-header {
         background-color: #008080;
         color: white;
@@ -451,3 +448,10 @@ else:
     st.info("Please enter your query and click 'Process Input' to start.")
 
 st.markdown('</div>', unsafe_allow_html=True)
+
+
+
+   # .stButton > button:hover {
+    #     background-color: #4b0082;
+    #     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    # }
