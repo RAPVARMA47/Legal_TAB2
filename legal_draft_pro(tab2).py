@@ -286,7 +286,7 @@ if st.session_state.state['processed']:
 
     with col1:
         st.markdown('<p class="subheader">Missing Details</p>', unsafe_allow_html=True)
-        for i,placeholder  in st.session_state.state['placeholders']:
+        for i, placeholder  in enumerate(st.session_state.state['placeholders']):
             for key, value in placeholder.items():
                 if value == "MISSING":
                     user_detail = st.text_input(f"{key.replace('_', ' ')}:", key=f"missing_{i}_{key}",
@@ -299,7 +299,7 @@ if st.session_state.state['processed']:
     with col2:
         st.markdown('<p class="subheader">Definitions</p>', unsafe_allow_html=True)
         updated_definitions = []
-        for definition in st.session_state.state['definitions']:
+        for i,definition in enumerate( st.session_state.state['definitions']):
             updated_definition = {}
             for term, desc in definition.items():
                 updated_desc = st.text_area(f"{term}:", value=desc, height=100, key=f"def_{i}_{term}")
