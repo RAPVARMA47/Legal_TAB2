@@ -103,7 +103,10 @@ st.markdown("""
     font-size: 16px;
     transition: all 0.3s ease;
     border: 1px solid black;
-}
+    }
+   [class="stMainBlockContainer block-container st-emotion-cache-1jicfl2 ea3mdgi5"]{
+       margin-top : -90px;
+   }
     </style>
     """, unsafe_allow_html=True)
 
