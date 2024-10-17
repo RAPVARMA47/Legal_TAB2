@@ -93,7 +93,7 @@ st.markdown("""
     width: 100%;
     min-width: auto;
     max-width: initial;
-}
+    }
     .stButton > button {
     background-color: white;
     color: black;
