@@ -288,7 +288,7 @@ if "query_input" not in st.session_state:
  
 
 
-user_input = st.text_area("Enter your query to fill the details:", 
+user_input = st.text_input("Enter your query to fill the details:", 
                           value=st.session_state.state['user_input'])
 
 col1, col2, col3 = st.columns(3)
@@ -308,7 +308,7 @@ with col3:
 
 
 # Process input
-if user_input and st.button("Process Input"):
+if user_input:
     
     st.session_state.state['user_input'] = user_input
     with st.spinner("Processing your input..."):
