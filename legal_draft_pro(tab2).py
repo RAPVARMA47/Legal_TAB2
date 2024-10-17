@@ -92,6 +92,16 @@ st.markdown("""
     [stMainBlockContainer block-container st-emotion-cache-1jicfl2 ea3mdgi5]{
         margin-top : -70px ;
     }
+    .stButton > button {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    border: 1px solid black;
+}
     </style>
     """, unsafe_allow_html=True)
 
