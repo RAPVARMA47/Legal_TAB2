@@ -84,7 +84,7 @@ st.markdown("""
     max-width: initial;
     }
     
-    .stButton:hover{
+    .stButton>button:hover{
         color: grey;
     }
     
