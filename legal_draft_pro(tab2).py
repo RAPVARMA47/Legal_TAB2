@@ -87,7 +87,6 @@ st.markdown("""
     .stButton>button:hover{
         color: grey;
         border: 0.5px solid grey;
-        background-color: grey;
     }
 
     .stButton>button:visited{
