@@ -260,8 +260,7 @@ user_input = st.text_area("Enter your query to fill the details:",
 
 # Process input
 if user_input and st.button("Process Input"):
-    global iii
-    iii=0
+    
     st.session_state.state['user_input'] = user_input
     with st.spinner("Processing your input..."):
         processed_response = process_input(user_input, placeholders1, placeholders2, placeholders3, placeholders4, placeholders5, placeholders6, placeholders7)
@@ -287,15 +286,15 @@ if st.session_state.state['processed']:
 
     with col1:
         st.markdown('<p class="subheader">Missing Details</p>', unsafe_allow_html=True)
-        for placeholder in st.session_state.state['placeholders']:
+        for i,placeholder  in st.session_state.state['placeholders']:
             for key, value in placeholder.items():
                 if value == "MISSING":
-                    user_detail = st.text_input(f"{key.replace('_', ' ')}:", key=iii,
+                    user_detail = st.text_input(f"{key.replace('_', ' ')}:", key=f"missing_{i}_{key}",
                                                 value=st.session_state.state['collected_details'].get(key, ""))
                     st.session_state.state['collected_details'][key] = user_detail
                 else:
-                    st.text_input(f"{key}:",key=iii, value=value, disabled=True)
-                iii+1
+                    st.text_input(f"{key}:",key=f"filled_{i}_{key}", value=value, disabled=True)
+                
 
     with col2:
         st.markdown('<p class="subheader">Definitions</p>', unsafe_allow_html=True)
@@ -303,7 +302,7 @@ if st.session_state.state['processed']:
         for definition in st.session_state.state['definitions']:
             updated_definition = {}
             for term, desc in definition.items():
-                updated_desc = st.text_area(f"{term}:", value=desc, height=100, key=f"def_{term}")
+                updated_desc = st.text_area(f"{term}:", value=desc, height=100, key=f"def_{i}_{term}")
                 updated_definition[term] = updated_desc
             updated_definitions.append(updated_definition)
         
