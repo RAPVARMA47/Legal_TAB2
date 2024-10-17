@@ -89,16 +89,14 @@ st.markdown("""
         border: 0.5px solid grey;
     }
 
-    .stButton>button:visited{
+    .stButton>button:focus:hover{
         color: grey;
         border: 0.5px solid grey;
-        background-color: grey;
     }
     
     .stButton>button:focus{
         color: grey;
         border: 0.5px solid grey;
-        background-color: grey;
     }
     
     .stButton>button:active{
