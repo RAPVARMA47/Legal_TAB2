@@ -89,7 +89,11 @@ st.markdown("""
     [class="big-font"]{
         margin-top : -110px;
     }
-    
+    .st-emotion-cache-1jicfl2 {
+    width: 100%;
+    min-width: auto;
+    max-width: initial;
+}
     .stButton > button {
     background-color: white;
     color: black;
