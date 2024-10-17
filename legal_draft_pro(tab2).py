@@ -21,7 +21,7 @@ load_dotenv()
 Gemini = st.secrets["GOOGLE_API_KEY"]
 llm = ChatGoogleGenerativeAI(model="gemini-1.5-pro-latest", google_api_key=Gemini)
 
-st.set_page_config(page_title="LEGAL DRAFT PRO", page_icon="⚖️", layout="wide")
+# st.set_page_config(page_title="LEGAL DRAFT PRO", page_icon="⚖️", layout="wide")
 st.markdown("""
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
@@ -101,8 +101,8 @@ hide_st_style = """
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
  
-st.markdown('<p class="big-font">LEGAL DRAFT PRO</p>', unsafe_allow_html=True)
-st.markdown('<p class="medium-font">Streamline Your Legal Document Creation</p>', unsafe_allow_html=True)
+# st.markdown('<p class="big-font">LEGAL DRAFT PRO</p>', unsafe_allow_html=True)
+# st.markdown('<p class="medium-font">Streamline Your Legal Document Creation</p>', unsafe_allow_html=True)
 
 doc1_path = r"files/my_own.docx"
 doc2_path = r"files/my_own2.docx"
@@ -254,7 +254,7 @@ if 'state' not in st.session_state:
     }
 
 # User input text area
-st.markdown('<div class="step-header">Step 1: Enter Your Query</div>', unsafe_allow_html=True)
+# st.markdown('<div class="step-header">Step 1: Enter Your Query</div>', unsafe_allow_html=True)
 user_input = st.text_area("Enter your query to fill the details:", 
                           value=st.session_state.state['user_input'])
 
