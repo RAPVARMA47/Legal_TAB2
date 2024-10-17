@@ -64,7 +64,7 @@ st.markdown("""
         color: white;
         font-weight: bold;
         border-radius: 25px;
-        padding: 10px 10px;
+        padding: 10px 25px;
         font-size: 16px;
         border: none;
         transition: all 0.3s ease;
@@ -96,7 +96,7 @@ st.markdown("""
     color: black;
     font-weight: bold;
     border-radius: 5px;
-    padding: 10px 10px;
+    padding: 10px 25px;
     font-size: 16px;
     transition: all 0.3s ease;
     border: 1px solid black;
@@ -320,7 +320,7 @@ query = st.text_area("Enter your query to fill the details:", value=st.session_s
 
 st.write("Sample Prompts:")
 
-col1, col2 = st.columns([4.5,2.8])
+col1, col2 = st.columns([0.7,0.3],vertical_alignment="center")
 with col1:
     if st.button("Please create a Master Service Agreement with the following details: On March 18, 2024, Promptora Inc., with its principal place of business at 635 Main Street, San Francisco, CA, will engage with John Smith, whose jurisdiction is New York, NY, and whose principal place of business is located at 123 Broadway, New York, NY."):
         set_query("Please create a Master Service Agreement with the following details: On March 18, 2024, Promptora Inc., with its principal place of business at 635 Main Street, San Francisco, CA, will engage with John Smith, whose jurisdiction is New York, NY, and whose principal place of business is located at 123 Broadway, New York, NY.")
