@@ -21,7 +21,6 @@ load_dotenv()
 Gemini = st.secrets["GOOGLE_API_KEY"]
 llm = ChatGoogleGenerativeAI(model="gemini-1.5-pro-latest", google_api_key=Gemini)
 
-# The UI interface 
 st.set_page_config(page_title="LEGAL DRAFT PRO", page_icon="⚖️", layout="wide")
 st.markdown("""
     <style>
