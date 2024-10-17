@@ -89,6 +89,9 @@ st.markdown("""
     [class="big-font"]{
         margin-top : -110px;
     }
+    [stMainBlockContainer block-container st-emotion-cache-1jicfl2 ea3mdgi5]{
+        margin-top : -70px ;
+    }
     </style>
     """, unsafe_allow_html=True)
 
