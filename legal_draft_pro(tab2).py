@@ -88,6 +88,16 @@ st.markdown("""
         color: grey;
         border: 0.5px solid grey;
     }
+
+    .stButton>button:visited{
+        color: grey;
+        border: 0.5px solid grey;
+    }
+    
+    .stButton>button:active{
+        color: grey;
+        border: 0.5px solid grey;
+    }
     
     .stButton > button {
     background-color: white;
