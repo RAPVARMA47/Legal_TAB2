@@ -113,19 +113,30 @@ st.markdown("""
         
 </div>
 """,unsafe_allow_html=True)
-col1, col2 = st.columns([1,3])
+col1, col2, col3 = st.columns([2,2,2])
 
 with col1:
     st.markdown("""
     <div style='text-align: justify; font-size: 16px; color: #34495e;'>
-            <li><strong>Master Service Agreement</strong></li><li><strong>New York Agreement</strong></li><li><strong>Data License Agreement</strong></li><li><strong>Professional Service Agreement</strong></li>
+            <li><strong>Master Service Agreement</strong></li><li><strong>New York Agreement</strong></li><li><strong>Data License Agreement</strong>
             
     </div>
     """,unsafe_allow_html=True)
+    
 with col2:
     st.markdown("""
     <div style='text-align: justify; font-size: 16px; color: #34495e;'>
-            <li><strong>Asset Purchase Agreement</strong></li> <li><strong>Safe Simple Agreement for Future Equity</strong></li> <li><strong>Founder's Stock Purchase Agreement</strong></li>
+        </li><li><strong>Professional Service Agreement</strong></li><li><strong>Asset Purchase Agreement</strong></li>
+
+            
+    </div>
+    """,unsafe_allow_html=True)
+    
+
+with col3:
+    st.markdown("""
+    <div style='text-align: justify; font-size: 16px; color: #34495e;'>
+             <li><strong>Safe Simple Agreement for Future Equity</strong></li> <li><strong>Founder's Stock Purchase Agreement</strong></li>
             
     </div>
     """,unsafe_allow_html=True)
