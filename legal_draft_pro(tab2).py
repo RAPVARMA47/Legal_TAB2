@@ -229,7 +229,7 @@ Response:
                                          content=user_input)
     prompt = PromptTemplate(template=formatted_template)
     chain = prompt | llm
-    response = chain.invoke({"content": user_input})
+    response = chain.invoke({"content": query})
     return response
 # Process input function
 def add_content_to_document(doc_path, placeholders, definitions, document_type):
@@ -267,7 +267,7 @@ def add_content_to_document(doc_path, placeholders, definitions, document_type):
 # Initialize session state
 if 'state' not in st.session_state:
     st.session_state.state = {
-        'user_input': "",
+        'query': "",
         'collected_details': {},
         'definitions': [],
         'placeholders': [],
