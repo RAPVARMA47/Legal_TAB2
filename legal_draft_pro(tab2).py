@@ -279,8 +279,8 @@ if 'state' not in st.session_state:
 
 # User input text area
 # st.markdown('<div class="step-header">Step 1: Enter Your Query</div>', unsafe_allow_html=True)
-def set_query(user_input):
-    st.session_state.query_input = user_input
+def set_query(query):
+    st.session_state.query_input = query
     st.rerun()
     
 if "query_input" not in st.session_state:
@@ -288,31 +288,27 @@ if "query_input" not in st.session_state:
  
 
 
-user_input = st.text_input("Enter your query to fill the details:", 
-                          value=st.session_state.state['user_input'])
+query = st.text_area("Enter your query to fill the details:", value=st.session_state.state['user_input'])
 
-col1, col2, col3 = st.columns(3)
+col1, col2, col3, col4 = st.columns(3)
 with col1:
     if st.button("Please create a Master Service Agreement with the following details: On March 18, 2024, Promptora Inc., with its principal place of business at 635 Main Street, San Francisco, CA, will engage with John Smith, whose jurisdiction is New York, NY, and whose principal place of business is located at 123 Broadway, New York, NY."):
         set_query("Please create a Master Service Agreement with the following details: On March 18, 2024, Promptora Inc., with its principal place of business at 635 Main Street, San Francisco, CA, will engage with John Smith, whose jurisdiction is New York, NY, and whose principal place of business is located at 123 Broadway, New York, NY.")
 with col2:
         
-    if st.button("Please fill in the details for this New York agreement: On March 18, 2024, the company Promptora Inc. will engage the consultant Sarah Johnson."):
-        set_query("Please fill in the details for this New York agreement: On March 18, 2024, the company Promptora Inc. will engage the consultant Sarah Johnson.")
-
-with col3:
-            
     if st.button("Please fill in the details for a Professional Service Agreement: Effective June 1, 2024, ConsultTech Solutions, based in Austin, Texas, will provide professional services to DataDrive Corporation, headquartered in Seattle, Washington, for a period of 12 months."):
         set_query("Please fill in the details for a Professional Service Agreement: Effective June 1, 2024, ConsultTech Solutions, based in Austin, Texas, will provide professional services to DataDrive Corporation, headquartered in Seattle, Washington, for a period of 12 months.")
 
-
-
+with col3:
+    if st.button("Please fill in the details for this New York agreement: On March 18, 2024, the company Promptora Inc. will engage the consultant Sarah Johnson."):
+        set_query("Please fill in the details for this New York agreement: On March 18, 2024, the company Promptora Inc. will engage the consultant Sarah Johnson.")
+            
 # Process input
-if user_input:
+if query and st.button("Process Input"):
     
-    st.session_state.state['user_input'] = user_input
+    st.session_state.state['user_input'] = query
     with st.spinner("Processing your input..."):
-        processed_response = process_input(user_input, placeholders1, placeholders2, placeholders3, placeholders4, placeholders5, placeholders6, placeholders7)
+        processed_response = process_input(query, placeholders1, placeholders2, placeholders3, placeholders4, placeholders5, placeholders6, placeholders7)
         processed_response = processed_response.content
         
         fresponse = processed_response.replace('[[', '{').replace(']]', '}')
