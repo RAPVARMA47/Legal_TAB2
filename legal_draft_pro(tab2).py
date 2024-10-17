@@ -92,6 +92,30 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
+st.markdown("""
+<div style='text-align: justify; font-size: 16px; color: #34495e;'>
+    <strong>Currently these are the document templates available to streamline your legal documentation/templates:</strong>
+        
+</div>
+""",unsafe_allow_html=True)
+col1, col2 = st.columns([1,3])
+
+with col1:
+    st.markdown("""
+    <div style='text-align: justify; font-size: 16px; color: #34495e;'>
+            <li><strong>Master Service Agreement</strong></li><li><strong>New York Agreement</strong></li><li><strong>Data License Agreement</strong></li><li><strong>Professional Service Agreement</strong></li>
+            
+    </div>
+    """,unsafe_allow_html=True)
+with col2:
+    st.markdown("""
+    <div style='text-align: justify; font-size: 16px; color: #34495e;'>
+            <li><strong>Asset Purchase Agreement</strong></li> <li><strong>Safe Simple Agreement for Future Equity</strong></li> <li><strong>Founder's Stock Purchase Agreement</strong></li>
+            
+    </div>
+    """,unsafe_allow_html=True)
+ 
+
 hide_st_style = """
             <style>
             #MainMenu {visibility: hidden;}
