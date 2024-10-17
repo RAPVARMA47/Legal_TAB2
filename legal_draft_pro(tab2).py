@@ -116,6 +116,8 @@ st.markdown("""
         
 </div>
 """,unsafe_allow_html=True)
+
+
 col1, col2, col3 = st.columns([2,2,2])
 
 with col1:
@@ -318,6 +320,8 @@ if "query_input" not in st.session_state:
 
 
 query = st.text_area("Enter your query to fill the details:", value=st.session_state.query_input)
+
+st.write("Sample Queries")
 
 col1, col2 = st.columns(2)
 with col1:
