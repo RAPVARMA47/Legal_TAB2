@@ -311,7 +311,7 @@ query = st.text_area("Enter your query to fill the details:", value=st.session_s
 
 st.write("Sample Prompts:")
 
-col1, col2 = st.columns([0.7,0.3],vertical_alignment="center")
+col1, col2 = st.columns([0.7,0.3])
 with col1:
     if st.button("Please create a Master Service Agreement with the following details: On March 18, 2024, Promptora Inc., with its principal place of business at 635 Main Street, San Francisco, CA, will engage with John Smith, whose jurisdiction is New York, NY, and whose principal place of business is located at 123 Broadway, New York, NY."):
         set_query("Please create a Master Service Agreement with the following details: On March 18, 2024, Promptora Inc., with its principal place of business at 635 Main Street, San Francisco, CA, will engage with John Smith, whose jurisdiction is New York, NY, and whose principal place of business is located at 123 Broadway, New York, NY.")
